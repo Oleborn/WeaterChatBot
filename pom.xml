@@ -26,12 +26,15 @@
         <tag/>
         <url/>
     </scm>
+
     <properties>
         <java.version>21</java.version>
         <spring-cloud.version>2024.0.1</spring-cloud.version>
         <telegrambots.version>6.9.7.1</telegrambots.version>
         <lombok.version>1.18.36</lombok.version>
+        <caffeine.version>3.1.8</caffeine.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,7 +65,7 @@
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
-            <version>3.1.8</version> <!-- или последняя версия -->
+            <version>${caffeine.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
